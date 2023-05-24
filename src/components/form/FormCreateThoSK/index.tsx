@@ -147,7 +147,7 @@ const FormCreateThoSK: React.FC<{ typeform?: string }> = (props) => {
     const isEmty = Object.values(dataUpload).includes("");
     const checkMaTho = dataUpload.maTho
       ? dataThoSuaKhoa?.findIndex((item) => {
-          return item.maTho === dataUpload.maTho;
+          return item.phone === dataUpload.phone;
         })
       : -1;
 
